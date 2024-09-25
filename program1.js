@@ -20,7 +20,7 @@ var isValid = function(s) {
             let topElement = stack.length === 0 ? '#' : stack.pop();
             // If the mapping for the closing bracket doesn't match the popped element, return false
             if (topElement !== mapping[char]) {
-                return fase;
+                return false;
             }
         } else {
             // If it's an opening bracket, push it onto the stack
