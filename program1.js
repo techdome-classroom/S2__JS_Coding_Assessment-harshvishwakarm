@@ -3,9 +3,9 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    // Stack to keep track of opening brackets
+
     let stack = [];
-    // Mapping of closing brackets to their corresponding opening brackets
+   
     const mapping = {
         ')': '(',
         '}': '{',
