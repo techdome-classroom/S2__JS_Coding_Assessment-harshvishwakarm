@@ -12,9 +12,8 @@ var isValid = function(s) {
         ']': '['
     };
 
-    // Iterate through each character in the string
     for (let char of s) {
-        // If the character is a closing bracket
+        // If the character is a closing 
         if (mapping[char]) {
             // Pop the topmost element from the stack if it's not empty, else assign a dummy value
             let topElement = stack.length === 0 ? '#' : stack.pop();
