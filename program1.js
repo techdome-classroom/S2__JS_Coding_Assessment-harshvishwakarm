@@ -14,7 +14,6 @@ var isValid = function(s) {
 
     for (let char of s) {
         if (mapping[char]) {
-            // Pop the topmost element from the stack if it's not empty, else assign a dummy value
             let topElement = stack.length === 0 ? '#' : stack.pop();
             // If the mapping for the closing bracket doesn't match the popped element, return false
             if (topElement !== mapping[char]) {
