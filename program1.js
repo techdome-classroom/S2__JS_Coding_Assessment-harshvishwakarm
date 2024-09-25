@@ -14,17 +14,17 @@ var isValid = function(s) {
 
     for (let char of s) {
         if (mapping[char]) {
-            let topElement = stack.length === 0 ? '#' : stack.pop();
-            if (topElement !== mapping[char]) {
-                return false;
+   let topElement = stack.length === 0 ? '#' : stack.pop();
+            if (topElement !== mapping[char]) {     
+                 return false;
             }
-        } else {
-       
+        } else  
+        {
+
             stack.push(char);
         }
     }
     
-   
     return stack.length === 0;
 };
 
